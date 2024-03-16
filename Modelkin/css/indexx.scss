@@ -1,0 +1,347 @@
+/*Обнуление*/
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+:focus,
+:active {
+	outline: none;
+}
+
+a:focus,
+a:active {
+	outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+	color: #fff;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: inherit;
+}
+
+* {
+	font-family: EightBits;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+/*--------------------*/
+@font-face {
+	font-family: EightBits;
+	src: url(/fonts/EightBits.ttf);
+}
+
+.container {
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+body {
+	background: #000014;
+}
+
+.nav {
+	width: 100%;
+	border-bottom: 2px solid #9B51E0;
+	font-family: EightBits;
+	background-color: #000014;
+	// background: red;
+	display: flex;
+	justify-content: center;
+
+	ul {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		// background: yellow;
+		.li_main {
+			margin-left: 50vw;
+
+		}
+
+		.li {
+			margin: 0 20px;
+		}
+
+		li {
+			margin: 0 20px;
+			color: #EDFF00;
+			margin: auto;
+			font-size: 18px;
+
+			.login {
+				margin-top: 70%;
+			}
+
+			a {
+				color: #EDFF00;
+			}
+
+			.logo {
+				font-family: 'EightBits';
+				height: 100px;
+			}
+		}
+	}
+}
+
+.main {
+	height: 600px;
+	display: flex;
+
+	h1 {
+		color: #fff;
+		padding-top: 250px;
+		font-size: 70px;
+		line-height: 50px;
+		height: 506px;
+		// width: 692px;
+	}
+
+	.blue_computer {
+		position: absolute;
+		margin-left: 109px;
+		margin-top: 54px;
+		z-index: 1;
+	}
+
+	.retangle_4 {
+		z-index: 0;
+		transform: scale(-1, 1);
+		position: absolute;
+	}
+
+	.description {
+		margin-left: 50%;
+		height: 406px;
+		width: 692px;
+	}
+
+	.ellipse {
+		position: absolute;
+		padding-left: 83%;
+		padding-top: 5%;
+	}
+}
+
+
+.second {
+	background-image: url(../img/pacmaneat.png);
+	background-repeat: no-repeat;
+	height: 3000px;
+
+	img {
+		position: absolute;
+	}
+
+	.request {
+		padding-top: 600px;
+		padding-left: 300px;
+		display: flex;
+
+		.arrow {
+			margin-top: 200px;
+		}
+
+		h2 {
+			color: #fff;
+			font-size: 70px;
+			width: 600px;
+			margin-top: 200px;
+		}
+
+		.shest {
+			img {
+				margin-top: 20px;
+				margin-left: 200px;
+				height: 400px;
+			}
+		}
+	}
+
+	.prikol {
+		margin-top: 1000px;
+
+		.info_tehnique {
+			margin-left: 100px;
+		}
+
+		ul {
+			display: flex;
+
+			.tehnique_photo {
+				margin-left: 100px;
+			}
+
+			.technique {
+				height: 400px;
+				width: 370px;
+				background-color: #000014;
+				border: 1rem solid #9B51E0;
+
+				h2 {
+
+					color: #fff;
+					width: 290px;
+					padding-left: 27px;
+					font-size: 30px;
+					// margin-left: -100px;
+				}
+			}
+
+			img {
+				position: relative;
+			}
+		}
+	}
+}
+
+.footer {
+	height: 250px;
+	margin-left: 100px;
+	margin-right: 100px;
+	display: flex;
+	justify-content: space-between;
+
+	p {
+		color: #fff;
+		font-size: 40px;
+	}
+
+	img {
+		width: 150px;
+	}
+}
+
+.main-back {
+	margin-left: 10%;
+	padding-top: 50px;
+	width: 80%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	img {
+		width: 100%;
+	}
+}
+
+.log-in {
+
+	margin-right: auto;
+	margin-left: auto;
+	width: 500px;
+	height: 500px;
+	padding: 50px;
+
+	.login {
+		width: 100%;
+
+		label {
+			color: white;
+			font-size: 20px;
+		}
+
+		input {
+			margin-left: 20px;
+			padding-left: 10px;
+			margin-top: 20px;
+			width: 250px;
+			color: black;
+			font-size: 18px;
+			height: 40px;
+			border-radius: 8px;
+			background: #FFF;
+		}
+	}
+}
+
+p,
+h2,
+table,
+td {
+	color: white;
+	border: 1px solid white;
+	display: ruby-text;
+}
+
+table,
+td,
+tr {
+	border: 1px solid white;
+	display: ruby-text;
+	padding: 10px;
+}
+
+th {
+	font-size: 40px;
+}
